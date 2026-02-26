@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 流程选择与建模能力 | AI-Driven Business Process Transformation and Automation</title>
+  <meta name="description" content="能够识别高价值业务流程 → 设计 AI 介入点 → 构建人机协作机制 → 衡量与迭代业务价值" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 流程选择与建模能力 | AI-Driven Business Process Transformation and Automation" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="能够识别高价值业务流程 → 设计 AI 介入点 → 构建人机协作机制 → 衡量与迭代业务价值" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 流程选择与建模能力 | AI-Driven Business Process Transformation and Automation" />
+  
+  <meta name="twitter:description" content="能够识别高价值业务流程 → 设计 AI 介入点 → 构建人机协作机制 → 衡量与迭代业务价值" />
+  
+
+<meta name="author" content="Lin Mi" />
+
+
+<meta name="date" content="2026-02-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="自动化与-ai-介入设计.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">AI-Driven Business Process Transformation and Automation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="01-intro.html"><a href="#%E5%89%8D%E8%A8%80"><i class="fa fa-check"></i><b>1</b> 前言</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="01-intro.html"><a href="#%E6%9C%AC%E4%B9%A6%E8%A6%81%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><i class="fa fa-check"></i><b>1.1</b> 本书要解决的问题</a></li>
+<li class="chapter" data-level="1.2" data-path="01-intro.html"><a href="#%E6%9C%AC%E4%B9%A6%E7%9A%84%E5%AE%9A%E4%BD%8D%E4%B8%8E%E8%AF%BB%E8%80%85%E5%AF%B9%E8%B1%A1"><i class="fa fa-check"></i><b>1.2</b> 本书的定位与读者对象</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="01-intro.html"><a href="#%E6%9C%AC%E4%B9%A6%E5%AE%9A%E4%BD%8D"><i class="fa fa-check"></i><b>1.2.1</b> 本书定位</a></li>
+<li class="chapter" data-level="1.2.2" data-path="01-intro.html"><a href="#%E8%AF%BB%E8%80%85%E5%AF%B9%E8%B1%A1"><i class="fa fa-check"></i><b>1.2.2</b> 读者对象</a></li>
+<li class="chapter" data-level="1.2.3" data-path="01-intro.html"><a href="#%E9%98%85%E8%AF%BB%E5%89%8D%E6%8F%90"><i class="fa fa-check"></i><b>1.2.3</b> 阅读前提</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="01-intro.html"><a href="#%E6%9C%AC%E4%B9%A6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F"><i class="fa fa-check"></i><b>1.3</b> 本书的使用方式</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="01-intro.html"><a href="#%E7%BA%BF%E6%80%A7%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84"><i class="fa fa-check"></i><b>1.3.1</b> 线性阅读路径</a></li>
+<li class="chapter" data-level="1.3.2" data-path="01-intro.html"><a href="#%E5%9C%BA%E6%99%AF%E5%8C%96%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84"><i class="fa fa-check"></i><b>1.3.2</b> 场景化阅读路径</a></li>
+<li class="chapter" data-level="1.3.3" data-path="01-intro.html"><a href="#%E6%96%B9%E6%B3%95%E8%AE%BA%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8"><i class="fa fa-check"></i><b>1.3.3</b> 方法论模板使用</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="01-intro.html"><a href="#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E8%AF%B4%E6%98%8E"><i class="fa fa-check"></i><b>1.4</b> 核心概念说明</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="01-intro.html"><a href="#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E7%9A%84%E6%9C%AC%E8%B4%A8"><i class="fa fa-check"></i><b>1.4.1</b> 业务流程的本质</a></li>
+<li class="chapter" data-level="1.4.2" data-path="01-intro.html"><a href="#ai-%E4%BB%8B%E5%85%A5%E7%9A%84%E5%90%AB%E4%B9%89"><i class="fa fa-check"></i><b>1.4.2</b> AI 介入的含义</a></li>
+<li class="chapter" data-level="1.4.3" data-path="01-intro.html"><a href="#%E5%86%B3%E7%AD%96%E9%97%AD%E7%8E%AF%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><i class="fa fa-check"></i><b>1.4.3</b> 决策闭环的重要性</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="01-intro.html"><a href="#%E6%9C%AC%E4%B9%A6%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7%E4%B8%8E%E8%BE%B9%E7%95%8C"><i class="fa fa-check"></i><b>1.5</b> 本书的局限性与边界</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="01-intro.html"><a href="#%E9%80%82%E7%94%A8%E8%8C%83%E5%9B%B4"><i class="fa fa-check"></i><b>1.5.1</b> 适用范围</a></li>
+<li class="chapter" data-level="1.5.2" data-path="01-intro.html"><a href="#%E6%8A%80%E6%9C%AF%E8%BE%B9%E7%95%8C"><i class="fa fa-check"></i><b>1.5.2</b> 技术边界</a></li>
+<li class="chapter" data-level="1.5.3" data-path="01-intro.html"><a href="#%E7%BB%84%E7%BB%87%E8%BE%B9%E7%95%8C"><i class="fa fa-check"></i><b>1.5.3</b> 组织边界</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="01-intro.html"><a href="#%E5%A6%82%E4%BD%95%E4%BB%8E%E6%9C%AC%E4%B9%A6%E8%8E%B7%E5%BE%97%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC"><i class="fa fa-check"></i><b>1.6</b> 如何从本书获得最大价值</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="01-intro.html"><a href="#%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5%E7%BB%93%E5%90%88"><i class="fa fa-check"></i><b>1.6.1</b> 理论与实践结合</a></li>
+<li class="chapter" data-level="1.6.2" data-path="01-intro.html"><a href="#%E5%9B%A2%E9%98%9F%E5%85%B1%E8%AF%BB%E4%B8%8E%E8%AE%A8%E8%AE%BA"><i class="fa fa-check"></i><b>1.6.2</b> 团队共读与讨论</a></li>
+<li class="chapter" data-level="1.6.3" data-path="01-intro.html"><a href="#%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%88%86%E4%BA%AB%E7%BB%8F%E9%AA%8C"><i class="fa fa-check"></i><b>1.6.3</b> 记录与分享经验</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="01-intro.html"><a href="#%E8%87%B4%E8%B0%A2"><i class="fa fa-check"></i><b>1.7</b> 致谢</a></li>
+<li class="chapter" data-level="1.8" data-path="01-intro.html"><a href="#%E5%85%B3%E4%BA%8E%E4%BD%9C%E8%80%85"><i class="fa fa-check"></i><b>1.8</b> 关于作者</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E9%80%89%E6%8B%A9%E4%B8%8E%E5%BB%BA%E6%A8%A1%E8%83%BD%E5%8A%9B"><i class="fa fa-check"></i><b>2</b> 流程选择与建模能力</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B5%81%E7%A8%8B%E9%80%89%E6%8B%A9%E5%86%B3%E5%AE%9A-ai-%E8%BD%AC%E5%9E%8B%E6%88%90%E8%B4%A5"><i class="fa fa-check"></i><b>2.1</b> 为什么”流程选择”决定 AI 转型成败</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="01-intro.html"><a href="#%E7%90%86%E8%A7%A3%E9%94%99%E8%AF%AF%E8%B5%B7%E7%82%B9%E7%9A%84%E4%BB%A3%E4%BB%B7"><i class="fa fa-check"></i><b>2.1.1</b> 理解”错误起点”的代价</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="01-intro.html"><a href="#%E9%AB%98%E4%BB%B7%E5%80%BC%E6%B5%81%E7%A8%8B%E8%AF%86%E5%88%AB%E6%A8%A1%E5%9E%8B%E4%B8%8D%E6%98%AF%E6%89%80%E6%9C%89%E6%B5%81%E7%A8%8B%E9%83%BD%E5%80%BC%E5%BE%97-ai-%E5%8C%96"><i class="fa fa-check"></i><b>2.2</b> 高价值流程识别模型:不是所有流程都值得 AI 化</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="01-intro.html"><a href="#%E8%BF%99%E4%B8%80%E6%A8%A1%E5%9E%8B%E4%B8%BA%E4%BD%95%E5%BF%85%E9%A1%BB%E5%AD%98%E5%9C%A8"><i class="fa fa-check"></i><b>2.2.1</b> 这一模型为何必须存在</a></li>
+<li class="chapter" data-level="2.2.2" data-path="01-intro.html"><a href="#%E9%AB%98%E4%BB%B7%E5%80%BC%E6%B5%81%E7%A8%8B%E7%9A%84%E7%94%9F%E6%88%90%E9%80%BB%E8%BE%91"><i class="fa fa-check"></i><b>2.2.2</b> 高价值流程的生成逻辑</a></li>
+<li class="chapter" data-level="2.2.3" data-path="01-intro.html"><a href="#%E4%BA%BA%E5%8A%9B%E7%93%B6%E9%A2%88%E4%B8%8E%E5%86%B3%E7%AD%96%E7%93%B6%E9%A2%88%E7%9A%84%E5%8C%BA%E5%88%86"><i class="fa fa-check"></i><b>2.2.3</b> 人力瓶颈与决策瓶颈的区分</a></li>
+<li class="chapter" data-level="2.2.4" data-path="01-intro.html"><a href="#%E4%BB%8E-0-%E5%88%B0-1-%E7%9A%84%E6%B5%81%E7%A8%8B%E7%AD%9B%E9%80%89%E5%AE%9E%E6%93%8D%E8%B7%AF%E5%BE%84"><i class="fa fa-check"></i><b>2.2.4</b> 从 0 到 1 的流程筛选实操路径</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%84%E6%96%B9%E6%B3%95%E6%8A%8A%E5%A4%8D%E6%9D%82%E5%B7%A5%E4%BD%9C%E6%8B%86%E6%88%90%E5%8F%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8D%95%E5%85%83"><i class="fa fa-check"></i><b>2.3</b> 流程解构方法:把复杂工作拆成可自动化单元</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A7%A3%E6%9E%84%E6%AF%94%E4%BC%98%E5%8C%96%E6%9B%B4%E9%87%8D%E8%A6%81"><i class="fa fa-check"></i><b>2.3.1</b> 为什么”解构”比”优化”更重要</a></li>
+<li class="chapter" data-level="2.3.2" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E5%8D%95%E5%85%83"><i class="fa fa-check"></i><b>2.3.2</b> 流程的基本结构单元</a></li>
+<li class="chapter" data-level="2.3.3" data-path="01-intro.html"><a href="#%E4%BF%A1%E6%81%AF%E5%88%B0%E5%8F%8D%E9%A6%88%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><i class="fa fa-check"></i><b>2.3.3</b> 信息到反馈的运行机制</a></li>
+<li class="chapter" data-level="2.3.4" data-path="01-intro.html"><a href="#%E5%B0%86%E6%B5%81%E7%A8%8B%E6%8B%86%E6%88%90%E5%8F%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8D%95%E5%85%83%E7%9A%84%E6%96%B9%E6%B3%95"><i class="fa fa-check"></i><b>2.3.4</b> 将流程拆成”可自动化单元”的方法</a></li>
+<li class="chapter" data-level="2.3.5" data-path="01-intro.html"><a href="#%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E4%B8%8E%E7%BA%A0%E5%81%8F%E6%96%B9%E5%BC%8F"><i class="fa fa-check"></i><b>2.3.5</b> 常见误区与纠偏方式</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="01-intro.html"><a href="#%E6%9C%AC%E9%98%B6%E6%AE%B5%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E5%88%A4%E6%96%AD"><i class="fa fa-check"></i><b>2.4</b> 本阶段的能力边界与成熟度判断</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="01-intro.html"><a href="#%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E8%AF%84%E4%BC%B0%E6%A1%86%E6%9E%B6"><i class="fa fa-check"></i><b>2.4.1</b> 能力成熟度评估框架</a></li>
+<li class="chapter" data-level="2.4.2" data-path="01-intro.html"><a href="#%E4%BB%8E-level-0-%E5%88%B0-level-2-%E7%9A%84%E8%BF%9B%E9%98%B6%E8%B7%AF%E5%BE%84"><i class="fa fa-check"></i><b>2.4.2</b> 从 Level 0 到 Level 2 的进阶路径</a></li>
+<li class="chapter" data-level="2.4.3" data-path="01-intro.html"><a href="#%E6%9C%AC%E9%98%B6%E6%AE%B5%E7%9A%84%E4%BA%A4%E4%BB%98%E6%A0%87%E5%87%86"><i class="fa fa-check"></i><b>2.4.3</b> 本阶段的交付标准</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="01-intro.html"><a href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8E-ai-%E4%BB%8B%E5%85%A5%E8%AE%BE%E8%AE%A1"><i class="fa fa-check"></i><b>3</b> 自动化与 AI 介入设计</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="01-intro.html"><a href="#%E6%9C%AC%E9%98%B6%E6%AE%B5%E5%9C%A8%E6%95%B4%E4%BD%93%E8%BD%AC%E5%9E%8B%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE"><i class="fa fa-check"></i><b>3.1</b> 本阶段在整体转型中的位置</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="01-intro.html"><a href="#%E4%BB%8E-stage-1-%E5%88%B0-stage-2-%E7%9A%84%E5%85%B3%E9%94%AE%E8%BD%AC%E5%8F%98"><i class="fa fa-check"></i><b>3.1.1</b> 从 Stage 1 到 Stage 2 的关键转变</a></li>
+<li class="chapter" data-level="3.1.2" data-path="01-intro.html"><a href="#stage-2-%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%85%B8%E5%9E%8B%E5%8E%9F%E5%9B%A0"><i class="fa fa-check"></i><b>3.1.2</b> Stage 2 失败的典型原因</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="01-intro.html"><a href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E7%B1%BB%E5%9E%8B%E5%88%86%E5%B1%82%E5%85%88%E5%88%86%E6%B8%85%E5%81%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E5%86%8D%E8%B0%88%E7%94%A8%E4%BB%80%E4%B9%88%E5%81%9A"><i class="fa fa-check"></i><b>3.2</b> 自动化类型分层:先分清”做的是什么”,再谈”用什么做”</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BF%85%E9%A1%BB%E5%88%86%E5%B1%82"><i class="fa fa-check"></i><b>3.2.1</b> 为什么自动化必须分层</a></li>
+<li class="chapter" data-level="3.2.2" data-path="01-intro.html"><a href="#%E4%B8%89%E7%B1%BB%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9A%84%E6%9C%AC%E8%B4%A8%E5%B7%AE%E5%BC%82"><i class="fa fa-check"></i><b>3.2.2</b> 三类自动化的本质差异</a></li>
+<li class="chapter" data-level="3.2.3" data-path="01-intro.html"><a href="#%E5%88%86%E5%B1%82%E5%A4%B1%E9%85%8D%E7%9A%84%E5%85%B8%E5%9E%8B%E5%A4%B1%E8%B4%A5%E6%9C%BA%E5%88%B6"><i class="fa fa-check"></i><b>3.2.3</b> 分层失配的典型失败机制</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="01-intro.html"><a href="#ai-%E4%BB%8B%E5%85%A5%E7%82%B9%E8%AE%BE%E8%AE%A1%E6%9B%BF%E4%BB%A3%E4%BA%BA%E8%BF%98%E6%98%AF%E5%A2%9E%E5%BC%BA%E4%BA%BA"><i class="fa fa-check"></i><b>3.3</b> AI 介入点设计:替代人,还是增强人</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="01-intro.html"><a href="#%E4%BB%8B%E5%85%A5%E7%82%B9%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%A0%B8%E5%BF%83%E9%97%AE%E9%A2%98"><i class="fa fa-check"></i><b>3.3.1</b> 介入点设计的核心问题</a></li>
+<li class="chapter" data-level="3.3.2" data-path="01-intro.html"><a href="#%E5%9B%9B%E7%A7%8D%E7%A8%B3%E5%AE%9A%E7%9A%84-ai-%E4%BB%8B%E5%85%A5%E6%A8%A1%E5%BC%8F"><i class="fa fa-check"></i><b>3.3.2</b> 四种稳定的 AI 介入模式</a></li>
+<li class="chapter" data-level="3.3.3" data-path="01-intro.html"><a href="#%E4%BB%8E%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%84%E5%88%B0%E4%BB%8B%E5%85%A5%E7%82%B9%E8%90%BD%E4%BD%8D%E7%9A%84%E5%AE%9E%E6%93%8D%E8%B7%AF%E5%BE%84"><i class="fa fa-check"></i><b>3.3.3</b> 从流程解构到介入点落位的实操路径</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="01-intro.html"><a href="#%E4%BA%BA%E6%9C%BA%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%88%B6%E4%B8%BA%E4%BB%80%E4%B9%88-100-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9C%A8%E5%95%86%E4%B8%9A%E4%B8%8A%E9%80%9A%E5%B8%B8%E6%98%AF%E9%94%99%E7%9A%84"><i class="fa fa-check"></i><b>3.4</b> 人机协作机制:为什么 100% 自动化在商业上通常是错的</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="01-intro.html"><a href="#%E4%BA%BA%E6%9C%BA%E5%8D%8F%E4%BD%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E6%A0%B9%E6%9C%AC%E5%8E%9F%E5%9B%A0"><i class="fa fa-check"></i><b>3.4.1</b> 人机协作存在的根本原因</a></li>
+<li class="chapter" data-level="3.4.2" data-path="01-intro.html"><a href="#%E7%A8%B3%E5%AE%9A%E5%8D%8F%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%B4%A3%E4%BB%BB%E5%88%92%E5%88%86%E9%80%BB%E8%BE%91"><i class="fa fa-check"></i><b>3.4.2</b> 稳定协作系统的责任划分逻辑</a></li>
+<li class="chapter" data-level="3.4.3" data-path="01-intro.html"><a href="#%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%9A%84%E4%BA%BA%E6%9C%BA%E5%8D%8F%E4%BD%9C%E8%AE%BE%E8%AE%A1%E6%AD%A5%E9%AA%A4"><i class="fa fa-check"></i><b>3.4.3</b> 可执行的人机协作设计步骤</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="01-intro.html"><a href="#%E6%9C%AC%E9%98%B6%E6%AE%B5%E7%9A%84%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E4%B8%8E%E4%B8%8B%E4%B8%80%E6%AD%A5"><i class="fa fa-check"></i><b>3.5</b> 本阶段的能力成熟度与下一步</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="01-intro.html"><a href="#stage-2-%E7%9A%84%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E8%AF%84%E4%BC%B0"><i class="fa fa-check"></i><b>3.5.1</b> Stage 2 的能力成熟度评估</a></li>
+<li class="chapter" data-level="3.5.2" data-path="01-intro.html"><a href="#stage-2-%E7%9A%84%E4%BA%A4%E4%BB%98%E6%A0%87%E5%87%86"><i class="fa fa-check"></i><b>3.5.2</b> Stage 2 的交付标准</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="01-intro.html"><a href="#ai-%E5%86%B3%E7%AD%96%E5%A2%9E%E5%BC%BA%E7%B3%BB%E7%BB%9F"><i class="fa fa-check"></i><b>4</b> AI 决策增强系统</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88-stage-3-%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E7%9A%84-ai-%E4%B8%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F"><i class="fa fa-check"></i><b>4.1</b> 为什么 Stage 3 才是真正的 AI 业务系统</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="01-intro.html"><a href="#%E4%BB%8E%E5%B7%A5%E5%85%B7%E5%88%B0%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%85%B3%E9%94%AE%E8%B7%83%E8%BF%81"><i class="fa fa-check"></i><b>4.1.1</b> 从”工具”到”系统”的关键跃迁</a></li>
+<li class="chapter" data-level="4.1.2" data-path="01-intro.html"><a href="#stage-3-%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B8%BB%E5%BC%A0"><i class="fa fa-check"></i><b>4.1.2</b> Stage 3 的价值主张</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="01-intro.html"><a href="#%E5%86%B3%E7%AD%96%E7%9A%84%E5%B1%82%E7%BA%A7%E7%BB%93%E6%9E%84ai-%E5%8F%AA%E8%83%BD%E5%9C%A8%E8%A2%AB%E5%85%81%E8%AE%B8%E7%9A%84%E5%B1%82%E7%BA%A7%E4%B8%AD%E7%94%9F%E6%95%88"><i class="fa fa-check"></i><b>4.2</b> 决策的层级结构:AI 只能在被允许的层级中生效</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="01-intro.html"><a href="#%E5%86%B3%E7%AD%96%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A6%82%E5%BF%B5%E8%80%8C%E6%98%AF%E4%B8%89%E7%A7%8D%E5%AE%8C%E5%85%A8%E4%B8%8D%E5%90%8C%E7%9A%84%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98"><i class="fa fa-check"></i><b>4.2.1</b> 决策不是一个概念,而是三种完全不同的系统问题</a></li>
+<li class="chapter" data-level="4.2.2" data-path="01-intro.html"><a href="#ai-%E5%9C%A8%E4%B8%8D%E5%90%8C%E5%86%B3%E7%AD%96%E5%B1%82%E7%BA%A7%E4%B8%AD%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C"><i class="fa fa-check"></i><b>4.2.2</b> AI 在不同决策层级中的能力边界</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="01-intro.html"><a href="#%E5%86%B3%E7%AD%96%E9%97%AD%E7%8E%AF%E8%AE%BE%E8%AE%A1%E6%B2%A1%E6%9C%89%E9%97%AD%E7%8E%AF%E5%B0%B1%E6%B2%A1%E6%9C%89%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%99%BA%E8%83%BD"><i class="fa fa-check"></i><b>4.3</b> 决策闭环设计:没有闭环,就没有真正的智能</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%A4%9A%E6%95%B0-ai-%E7%B3%BB%E7%BB%9F%E6%B0%B8%E8%BF%9C%E5%81%9C%E7%95%99%E5%9C%A8-demo-%E9%98%B6%E6%AE%B5"><i class="fa fa-check"></i><b>4.3.1</b> 为什么大多数 AI 系统永远停留在 Demo 阶段</a></li>
+<li class="chapter" data-level="4.3.2" data-path="01-intro.html"><a href="#%E5%86%B3%E7%AD%96%E9%97%AD%E7%8E%AF%E7%9A%84%E4%BA%94%E4%B8%AA%E7%BB%93%E6%9E%84%E6%80%A7%E7%8E%AF%E8%8A%82"><i class="fa fa-check"></i><b>4.3.2</b> 决策闭环的五个结构性环节</a></li>
+<li class="chapter" data-level="4.3.3" data-path="01-intro.html"><a href="#%E5%88%A4%E6%96%AD%E7%B3%BB%E7%BB%9F%E4%B8%8Edemo%E7%9A%84%E5%94%AF%E4%B8%80%E6%A0%87%E5%87%86"><i class="fa fa-check"></i><b>4.3.3</b> 判断”系统”与”Demo”的唯一标准</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="01-intro.html"><a href="#%E4%BB%8E-0-%E5%88%B0-1-%E6%9E%84%E5%BB%BA-ai-%E5%86%B3%E7%AD%96%E5%A2%9E%E5%BC%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%B7%AF%E5%BE%84"><i class="fa fa-check"></i><b>4.4</b> 从 0 到 1 构建 AI 决策增强系统的可执行路径</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="01-intro.html"><a href="#%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%B5%B7%E7%82%B9%E9%80%89%E4%B8%80%E4%B8%AA%E5%AE%89%E5%85%A8%E4%BD%86%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%86%B3%E7%AD%96"><i class="fa fa-check"></i><b>4.4.1</b> 正确的起点:选一个”安全但真实”的决策</a></li>
+<li class="chapter" data-level="4.4.2" data-path="01-intro.html"><a href="#%E5%BF%85%E9%A1%BB%E4%BA%A4%E4%BB%98%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%BA%A7%E4%BA%A7%E5%87%BA"><i class="fa fa-check"></i><b>4.4.2</b> 必须交付的系统级产出</a></li>
+<li class="chapter" data-level="4.4.3" data-path="01-intro.html"><a href="#%E6%96%B0%E6%89%8B%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%94%99%E8%AF%AF"><i class="fa fa-check"></i><b>4.4.3</b> 新手最常见的系统性错误</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="01-intro.html"><a href="#stage-3-%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%95%B4%E4%BD%93%E4%BD%93%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%88%90%E7%8A%B6%E6%80%81"><i class="fa fa-check"></i><b>4.5</b> Stage 3 的能力边界与整体体系的完成状态</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="01-intro.html"><a href="#stage-3-%E7%9A%84%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E8%AF%84%E4%BC%B0"><i class="fa fa-check"></i><b>4.5.1</b> Stage 3 的能力成熟度评估</a></li>
+<li class="chapter" data-level="4.5.2" data-path="01-intro.html"><a href="#stage-3-%E7%9A%84%E4%BA%A4%E4%BB%98%E6%A0%87%E5%87%86"><i class="fa fa-check"></i><b>4.5.2</b> Stage 3 的交付标准</a></li>
+<li class="chapter" data-level="4.5.3" data-path="01-intro.html"><a href="#%E4%BB%8E-stage-3-%E5%88%B0-stage-4-%E7%9A%84%E8%A1%94%E6%8E%A5"><i class="fa fa-check"></i><b>4.5.3</b> 从 Stage 3 到 Stage 4 的衔接</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="01-intro.html"><a href="#%E4%BC%81%E4%B8%9A%E7%BA%A7%E6%B5%81%E7%A8%8B%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84"><i class="fa fa-check"></i><b>5</b> 企业级流程系统架构</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88-stage-4-%E6%98%AF%E6%9C%80%E5%AE%B9%E6%98%93%E8%A2%AB%E4%BD%8E%E4%BC%B0%E5%8D%B4%E6%9C%80%E8%87%B4%E5%91%BD%E7%9A%84%E9%98%B6%E6%AE%B5"><i class="fa fa-check"></i><b>5.1</b> 为什么 Stage 4 是”最容易被低估、却最致命”的阶段</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="01-intro.html"><a href="#%E4%BB%8E%E5%B1%80%E9%83%A8%E4%BC%98%E5%8C%96%E5%88%B0%E7%B3%BB%E7%BB%9F%E5%8D%8F%E5%90%8C%E7%9A%84%E5%85%B3%E9%94%AE%E8%BD%AC%E5%8F%98"><i class="fa fa-check"></i><b>5.1.1</b> 从局部优化到系统协同的关键转变</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="01-intro.html"><a href="#%E5%A4%9A%E6%B5%81%E7%A8%8B%E5%8D%8F%E5%90%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%95%E7%82%B9%E6%9C%80%E4%BC%98%E5%87%A0%E4%B9%8E%E5%BF%85%E7%84%B6%E5%AF%BC%E8%87%B4%E6%95%B4%E4%BD%93%E6%AC%A1%E4%BC%98"><i class="fa fa-check"></i><b>5.2</b> 多流程协同:为什么单点最优几乎必然导致整体次优</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="01-intro.html"><a href="#%E5%8D%95%E6%B5%81%E7%A8%8B%E8%A7%86%E8%A7%92%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E9%99%B7%E9%98%B1"><i class="fa fa-check"></i><b>5.2.1</b> 单流程视角的结构性陷阱</a></li>
+<li class="chapter" data-level="5.2.2" data-path="01-intro.html"><a href="#%E4%BB%8E%E6%B5%81%E7%A8%8B%E6%9C%AC%E8%BA%AB%E5%88%B0%E6%B5%81%E7%A8%8B%E5%85%B3%E7%B3%BB%E7%9A%84%E8%A7%86%E8%A7%92%E8%B7%83%E8%BF%81"><i class="fa fa-check"></i><b>5.2.2</b> 从流程本身到流程关系的视角跃迁</a></li>
+<li class="chapter" data-level="5.2.3" data-path="01-intro.html"><a href="#%E5%A4%9A%E6%B5%81%E7%A8%8B%E5%8D%8F%E5%90%8C%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99"><i class="fa fa-check"></i><b>5.2.3</b> 多流程协同的设计原则</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="01-intro.html"><a href="#%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84%E6%98%A0%E5%B0%84%E4%B8%BA%E4%BB%80%E4%B9%88%E7%9C%9F%E6%AD%A3%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%8E%E6%9D%A5%E4%B8%8D%E5%9C%A8%E5%B7%A5%E5%85%B7%E4%B8%8A"><i class="fa fa-check"></i><b>5.3</b> 技术与组织架构映射:为什么真正的问题从来不在工具上</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="01-intro.html"><a href="#%E8%A2%AB%E5%B7%A5%E5%85%B7%E7%BB%91%E6%9E%B6%E7%9A%84%E7%9C%9F%E5%AE%9E%E5%90%AB%E4%B9%89"><i class="fa fa-check"></i><b>5.3.1</b> “被工具绑架”的真实含义</a></li>
+<li class="chapter" data-level="5.3.2" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E5%86%B3%E7%AD%96%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C%E7%9A%84%E5%AF%B9%E9%BD%90"><i class="fa fa-check"></i><b>5.3.2</b> 流程、决策与系统边界的对齐</a></li>
+<li class="chapter" data-level="5.3.3" data-path="01-intro.html"><a href="#it%E4%B8%9A%E5%8A%A1%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%90%88%E8%A7%84%E7%9A%84%E5%8D%8F%E5%90%8C%E6%9C%BA%E5%88%B6"><i class="fa fa-check"></i><b>5.3.3</b> IT、业务、数据与合规的协同机制</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="01-intro.html"><a href="#%E4%BB%8E%E8%83%BD%E5%8A%9B%E6%89%A9%E6%95%A3%E5%88%B0%E7%B3%BB%E7%BB%9F%E6%B2%BB%E7%90%86%E7%9A%84%E5%85%B3%E9%94%AE%E8%B7%83%E8%BF%81"><i class="fa fa-check"></i><b>5.4</b> 从能力扩散到系统治理的关键跃迁</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="01-intro.html"><a href="#stage-4-%E7%9A%84%E5%90%AF%E5%8A%A8%E4%BF%A1%E5%8F%B7"><i class="fa fa-check"></i><b>5.4.1</b> Stage 4 的启动信号</a></li>
+<li class="chapter" data-level="5.4.2" data-path="01-intro.html"><a href="#%E5%90%88%E6%A0%BC%E7%9A%84-stage-4-%E4%BA%A4%E4%BB%98%E5%BD%A2%E6%80%81"><i class="fa fa-check"></i><b>5.4.2</b> 合格的 Stage 4 交付形态</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="01-intro.html"><a href="#stage-4-%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%95%B4%E4%BD%93%E4%BD%93%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%88%90%E7%8A%B6%E6%80%81"><i class="fa fa-check"></i><b>5.5</b> Stage 4 的能力边界与整体体系的完成状态</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="01-intro.html"><a href="#stage-4-%E7%9A%84%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E8%AF%84%E4%BC%B0"><i class="fa fa-check"></i><b>5.5.1</b> Stage 4 的能力成熟度评估</a></li>
+<li class="chapter" data-level="5.5.2" data-path="01-intro.html"><a href="#stage-4-%E7%9A%84%E4%BA%A4%E4%BB%98%E6%A0%87%E5%87%86"><i class="fa fa-check"></i><b>5.5.2</b> Stage 4 的交付标准</a></li>
+<li class="chapter" data-level="5.5.3" data-path="01-intro.html"><a href="#%E4%BB%8E-stage-4-%E5%88%B0-stage-5-%E7%9A%84%E8%A1%94%E6%8E%A5"><i class="fa fa-check"></i><b>5.5.3</b> 从 Stage 4 到 Stage 5 的衔接</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="01-intro.html"><a href="#%E4%BB%B7%E5%80%BC%E8%A1%A1%E9%87%8F%E4%B8%8E%E7%BB%84%E7%BB%87%E5%8F%98%E9%9D%A9"><i class="fa fa-check"></i><b>6</b> 价值衡量与组织变革</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88-stage-5-%E5%86%B3%E5%AE%9A%E6%9C%89%E6%B2%A1%E6%9C%89%E5%8F%91%E7%94%9F%E8%BD%AC%E5%9E%8B"><i class="fa fa-check"></i><b>6.1</b> 为什么 Stage 5 决定”有没有发生转型”</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="01-intro.html"><a href="#%E6%8A%80%E6%9C%AF%E6%88%90%E5%8A%9F-vs-%E8%BD%AC%E5%9E%8B%E6%88%90%E5%8A%9F"><i class="fa fa-check"></i><b>6.1.1</b> 技术成功 vs 转型成功</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="01-intro.html"><a href="#%E4%BB%B7%E5%80%BC%E8%AF%84%E4%BC%B0%E6%A8%A1%E5%9E%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E7%9C%81%E4%BA%86%E5%A4%9A%E5%B0%91%E9%92%B1%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F"><i class="fa fa-check"></i><b>6.2</b> 价值评估模型:为什么”省了多少钱”远远不够</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="01-intro.html"><a href="#%E4%BC%A0%E7%BB%9F-roi-%E5%9C%A8-ai-%E8%BD%AC%E5%9E%8B%E4%B8%AD%E7%9A%84%E5%A4%B1%E6%95%88"><i class="fa fa-check"></i><b>6.2.1</b> 传统 ROI 在 AI 转型中的失效</a></li>
+<li class="chapter" data-level="6.2.2" data-path="01-intro.html"><a href="#%E5%9B%9B%E7%B1%BB%E5%BF%85%E9%A1%BB%E8%A2%AB%E6%98%BE%E6%80%A7%E5%8C%96%E7%9A%84%E4%BB%B7%E5%80%BC%E7%BB%B4%E5%BA%A6"><i class="fa fa-check"></i><b>6.2.2</b> 四类必须被显性化的价值维度</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="01-intro.html"><a href="#%E7%BB%84%E7%BB%87%E4%B8%8E%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%80%E6%9C%AF%E6%88%90%E5%8A%9F%E7%BB%84%E7%BB%87%E5%8D%B4%E5%A4%B1%E8%B4%A5"><i class="fa fa-check"></i><b>6.3</b> 组织与能力迁移:为什么技术成功,组织却失败</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="01-intro.html"><a href="#ai-%E8%BD%AC%E5%9E%8B%E5%A4%B1%E8%B4%A5%E7%9A%84%E7%9C%9F%E6%AD%A3%E5%8E%9F%E5%9B%A0"><i class="fa fa-check"></i><b>6.3.1</b> AI 转型失败的真正原因</a></li>
+<li class="chapter" data-level="6.3.2" data-path="01-intro.html"><a href="#%E8%A7%92%E8%89%B2%E9%87%8D%E6%9E%84%E6%98%AF%E4%B8%8D%E5%8F%AF%E5%9B%9E%E9%81%BF%E7%9A%84%E8%BF%87%E7%A8%8B"><i class="fa fa-check"></i><b>6.3.2</b> 角色重构是不可回避的过程</a></li>
+<li class="chapter" data-level="6.3.3" data-path="01-intro.html"><a href="#%E6%BF%80%E5%8A%B1%E6%9C%BA%E5%88%B6%E4%B8%8E%E8%83%BD%E5%8A%9B%E5%8D%87%E7%BA%A7%E7%9A%84%E5%90%8C%E6%AD%A5%E8%B0%83%E6%95%B4"><i class="fa fa-check"></i><b>6.3.3</b> 激励机制与能力升级的同步调整</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="01-intro.html"><a href="#%E4%BB%8E%E9%A1%B9%E7%9B%AE%E5%88%B0%E5%B9%B3%E5%8F%B0ai-%E8%BD%AC%E5%9E%8B%E7%9A%84%E7%BB%88%E6%9E%81%E5%BD%A2%E6%80%81"><i class="fa fa-check"></i><b>6.4</b> 从项目到平台:AI 转型的终极形态</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="01-intro.html"><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%80%9D%E7%BB%B4%E5%BF%85%E9%A1%BB%E7%BB%88%E7%BB%93"><i class="fa fa-check"></i><b>6.4.1</b> 为什么”项目思维”必须终结</a></li>
+<li class="chapter" data-level="6.4.2" data-path="01-intro.html"><a href="#%E5%B9%B3%E5%8F%B0%E5%8C%96%E7%9A%84%E6%9C%AC%E8%B4%A8%E4%B8%8D%E6%98%AF%E6%8A%80%E6%9C%AF%E8%80%8C%E6%98%AF%E6%9C%BA%E5%88%B6"><i class="fa fa-check"></i><b>6.4.2</b> 平台化的本质不是技术,而是机制</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="01-intro.html"><a href="#%E6%95%B4%E4%B8%AA-stage-15-%E4%BD%93%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%88%90%E7%8A%B6%E6%80%81"><i class="fa fa-check"></i><b>6.5</b> 整个 Stage 1–5 体系的完成状态</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="01-intro.html"><a href="#stage-5-%E7%9A%84%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E8%AF%84%E4%BC%B0"><i class="fa fa-check"></i><b>6.5.1</b> Stage 5 的能力成熟度评估</a></li>
+<li class="chapter" data-level="6.5.2" data-path="01-intro.html"><a href="#stage-5-%E7%9A%84%E4%BA%A4%E4%BB%98%E6%A0%87%E5%87%86"><i class="fa fa-check"></i><b>6.5.2</b> Stage 5 的交付标准</a></li>
+<li class="chapter" data-level="6.5.3" data-path="01-intro.html"><a href="#%E4%BD%93%E7%B3%BB%E5%AE%8C%E6%88%90%E7%9A%84%E6%A0%87%E5%BF%97"><i class="fa fa-check"></i><b>6.5.3</b> 体系完成的标志</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E6%94%B9%E9%80%A0%E9%80%9A%E7%94%A8%E6%96%B9%E6%B3%95%E8%AE%BA"><i class="fa fa-check"></i><b>7</b> 流程改造通用方法论</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="01-intro.html"><a href="#%E6%96%B9%E6%B3%95%E8%AE%BA%E9%80%82%E7%94%A8%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%89%8D%E6%8F%90%E5%81%87%E8%AE%BE"><i class="fa fa-check"></i><b>7.1</b> 方法论适用边界与前提假设</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="01-intro.html"><a href="#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><i class="fa fa-check"></i><b>7.1.1</b> 适用场景</a></li>
+<li class="chapter" data-level="7.1.2" data-path="01-intro.html"><a href="#%E6%A0%B8%E5%BF%83%E5%81%87%E8%AE%BE"><i class="fa fa-check"></i><b>7.1.2</b> 核心假设</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E6%94%B9%E9%80%A0%E7%9A%84%E8%B5%B7%E7%82%B9%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%94%B9%E8%BF%99%E4%B8%AA%E6%B5%81%E7%A8%8B"><i class="fa fa-check"></i><b>7.2</b> 流程改造的起点:为什么要改这个流程</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="01-intro.html"><a href="#%E6%98%8E%E7%A1%AE%E6%94%B9%E9%80%A0%E5%8A%A8%E5%9B%A0%E8%80%8C%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%8E%B0%E8%B1%A1"><i class="fa fa-check"></i><b>7.2.1</b> 明确改造动因,而不是问题现象</a></li>
+<li class="chapter" data-level="7.2.2" data-path="01-intro.html"><a href="#%E5%AE%9A%E4%B9%89%E6%B5%81%E7%A8%8B%E6%94%B9%E9%80%A0%E7%9A%84%E4%BB%B7%E5%80%BC%E7%9B%AE%E6%A0%87"><i class="fa fa-check"></i><b>7.2.2</b> 定义流程改造的价值目标</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E7%8E%B0%E7%8A%B6%E8%BF%98%E5%8E%9F%E4%B8%8D%E6%98%AF%E7%94%BB%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%80%8C%E6%98%AF%E5%A4%8D%E7%9B%98%E7%9C%9F%E5%AE%9E%E8%BF%90%E8%A1%8C"><i class="fa fa-check"></i><b>7.3</b> 流程现状还原:不是画流程图,而是复盘真实运行</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="01-intro.html"><a href="#%E7%94%A8%E7%9C%9F%E5%AE%9E%E6%A1%88%E4%BE%8B%E8%BF%98%E5%8E%9F%E6%B5%81%E7%A8%8B%E8%80%8C%E4%B8%8D%E6%98%AF%E7%90%86%E6%83%B3%E7%89%88%E6%9C%AC"><i class="fa fa-check"></i><b>7.3.1</b> 用真实案例还原流程,而不是理想版本</a></li>
+<li class="chapter" data-level="7.3.2" data-path="01-intro.html"><a href="#%E8%AF%86%E5%88%AB%E6%B5%81%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E7%B1%BB%E5%85%B3%E9%94%AE%E8%8A%82%E7%82%B9"><i class="fa fa-check"></i><b>7.3.2</b> 识别流程中的三类关键节点</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="01-intro.html"><a href="#%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%84%E6%8A%8A%E4%B8%80%E4%BB%B6%E4%BA%8B%E6%8B%86%E6%88%90%E5%8F%AF%E6%94%B9%E9%80%A0%E7%9A%84%E5%8D%95%E5%85%83"><i class="fa fa-check"></i><b>7.4</b> 流程解构:把”一件事”拆成可改造的单元</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="01-intro.html"><a href="#%E8%A7%A3%E6%9E%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8D%95%E5%85%83%E7%BB%93%E6%9E%84"><i class="fa fa-check"></i><b>7.4.1</b> 解构的基本单元结构</a></li>
+<li class="chapter" data-level="7.4.2" data-path="01-intro.html"><a href="#%E5%88%A4%E6%96%AD%E5%93%AA%E4%BA%9B%E5%8D%95%E5%85%83%E5%80%BC%E5%BE%97%E8%A2%AB%E9%87%8D%E6%9E%84"><i class="fa fa-check"></i><b>7.4.2</b> 判断哪些单元值得被重构</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="01-intro.html"><a href="#%E6%94%B9%E9%80%A0%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B%E4%B8%8D%E6%98%AF%E6%9B%B4%E8%87%AA%E5%8A%A8%E8%80%8C%E6%98%AF%E6%9B%B4%E5%90%88%E7%90%86"><i class="fa fa-check"></i><b>7.5</b> 改造设计:流程不是”更自动”,而是”更合理”</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="01-intro.html"><a href="#%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%94%B9%E9%80%A0%E6%96%B9%E5%BC%8F"><i class="fa fa-check"></i><b>7.5.1</b> 选择正确的改造方式</a></li>
+<li class="chapter" data-level="7.5.2" data-path="01-intro.html"><a href="#%E6%98%8E%E7%A1%AE%E4%BA%BA%E6%9C%BA%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%85%9C%E5%BA%95%E6%9C%BA%E5%88%B6"><i class="fa fa-check"></i><b>7.5.2</b> 明确人机边界与兜底机制</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="01-intro.html"><a href="#%E9%97%AD%E7%8E%AF%E6%9E%84%E5%BB%BA%E8%AE%A9%E6%B5%81%E7%A8%8B%E5%85%B7%E5%A4%87%E8%87%AA%E6%88%91%E4%BF%AE%E6%AD%A3%E8%83%BD%E5%8A%9B"><i class="fa fa-check"></i><b>7.6</b> 闭环构建:让流程具备自我修正能力</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="01-intro.html"><a href="#%E6%9E%84%E5%BB%BA%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%BF%90%E8%A1%8C%E9%97%AD%E7%8E%AF"><i class="fa fa-check"></i><b>7.6.1</b> 构建最小可运行闭环</a></li>
+<li class="chapter" data-level="7.6.2" data-path="01-intro.html"><a href="#%E8%AE%BE%E5%AE%9A%E6%94%B9%E9%80%A0%E6%95%88%E6%9E%9C%E7%9A%84%E9%AA%8C%E8%AF%81%E6%96%B9%E5%BC%8F"><i class="fa fa-check"></i><b>7.6.2</b> 设定改造效果的验证方式</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="01-intro.html"><a href="#%E7%BB%84%E7%BB%87%E4%B8%8E%E8%A7%92%E8%89%B2%E9%80%82%E9%85%8D%E6%B5%81%E7%A8%8B%E6%94%B9%E9%80%A0%E4%B8%8D%E6%98%AF%E6%8A%80%E6%9C%AF%E9%97%AE%E9%A2%98"><i class="fa fa-check"></i><b>7.7</b> 组织与角色适配:流程改造不是技术问题</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="01-intro.html"><a href="#%E8%A7%92%E8%89%B2%E5%8F%98%E5%8C%96%E5%BF%85%E9%A1%BB%E8%A2%AB%E6%98%BE%E6%80%A7%E6%89%BF%E8%AE%A4"><i class="fa fa-check"></i><b>7.7.1</b> 角色变化必须被显性承认</a></li>
+<li class="chapter" data-level="7.7.2" data-path="01-intro.html"><a href="#%E6%BF%80%E5%8A%B1%E4%B8%8E%E8%B4%A3%E4%BB%BB%E5%BF%85%E9%A1%BB%E4%B8%8E%E6%96%B0%E6%B5%81%E7%A8%8B%E5%AF%B9%E9%BD%90"><i class="fa fa-check"></i><b>7.7.2</b> 激励与责任必须与新流程对齐</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="01-intro.html"><a href="#%E6%9C%80%E7%BB%88%E4%BA%A4%E4%BB%98%E7%89%A9%E6%A0%87%E5%87%86%E5%8F%AF%E7%9B%B4%E6%8E%A5%E4%BD%9C%E4%B8%BA%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8"><i class="fa fa-check"></i><b>7.8</b> 最终交付物标准(可直接作为模板使用)</a></li>
+<li class="chapter" data-level="7.9" data-path="01-intro.html"><a href="#%E7%BB%93%E8%AF%AD-%E6%96%B9%E6%B3%95%E8%AE%BA%E7%9A%84%E7%9C%9F%E6%AD%A3%E4%BB%B7%E5%80%BC"><i class="fa fa-check"></i><b>7.9</b> 结语 | 方法论的真正价值</a>
+<ul>
+<li class="chapter" data-level="7.9.1" data-path="01-intro.html"><a href="#%E6%96%B9%E6%B3%95%E8%AE%BA%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B8%89%E5%B1%82"><i class="fa fa-check"></i><b>7.9.1</b> 方法论的价值三层</a></li>
+<li class="chapter" data-level="7.9.2" data-path="01-intro.html"><a href="#%E4%BB%8E%E6%96%B9%E6%B3%95%E5%88%B0%E8%83%BD%E5%8A%9B%E7%9A%84%E8%B7%83%E8%BF%81"><i class="fa fa-check"></i><b>7.9.2</b> 从方法到能力的跃迁</a></li>
+<li class="chapter" data-level="7.9.3" data-path="01-intro.html"><a href="#%E6%9C%80%E7%BB%88%E7%9B%AE%E6%A0%87"><i class="fa fa-check"></i><b>7.9.3</b> 最终目标</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/liamamilin/Some-Project/blob/master/%E4%B8%AA%E4%BA%BA%E9%87%8D%E8%A6%81/%E6%88%91%E7%9A%84%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81202601.jpg" target="_blank">联系我</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AI-Driven Business Process Transformation and Automation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="流程选择与建模能力" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> 流程选择与建模能力<a href="#%E6%B5%81%E7%A8%8B%E9%80%89%E6%8B%A9%E4%B8%8E%E5%BB%BA%E6%A8%A1%E8%83%BD%E5%8A%9B" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="为什么流程选择决定-ai-转型成败" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> 为什么”流程选择”决定 AI 转型成败<a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B5%81%E7%A8%8B%E9%80%89%E6%8B%A9%E5%86%B3%E5%AE%9A-ai-%E8%BD%AC%E5%9E%8B%E6%88%90%E8%B4%A5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>任何 AI 转型项目,在技术失败之前,往往已经在更早的阶段失败了。这个失败并非模型不够先进,也不是算力不足,而是起点错误。企业和团队最常见的误区,是在没有对流程进行价值判断与结构拆解的情况下,直接将 AI 叠加到现有工作中,期望”自动化自然发生”。</p>
+<p>流程选择与建模能力的存在,正是为了纠正这一系统性误判。它解决的不是”AI 能不能做”,而是”<strong>值不值得做</strong>”“<strong>做了是否真的会改变系统表现</strong>”。</p>
+<p>在本章中,我们将建立两项核心能力。第一,是识别哪些流程值得被 AI 化,哪些流程应当被放弃或延后。第二,是把一个看似连续、复杂、充满经验判断的业务流程,拆解为可分析、可重组、可自动化的结构单元。</p>
+<div id="理解错误起点的代价" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> 理解”错误起点”的代价<a href="#%E7%90%86%E8%A7%A3%E9%94%99%E8%AF%AF%E8%B5%B7%E7%82%B9%E7%9A%84%E4%BB%A3%E4%BB%B7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>让我们先看一个真实的失败案例,以说明”错误起点”带来的实际损失。</p>
+<p><strong>案例:某零售企业的”智能客服”项目</strong></p>
+<p>这家企业投入了 6 个月时间和数百万预算,部署了一套基于大模型的智能客服系统。项目目标很明确:用 AI 替代 50% 的人工客服工作。</p>
+<p>项目上线后,系统确实能够回答大量常见问题。但三个月后,问题开始显现:</p>
+<ol style="list-style-type: decimal">
+<li><strong>客户满意度下降</strong> - AI 的标准化回答无法处理复杂场景,客户转人工的比例反而上升了</li>
+<li><strong>问题处理周期延长</strong> - 简单问题被 AI 接管,但复杂问题需要先被 AI “错误处理”一遍,再转人工,导致总耗时增加</li>
+<li><strong>客服团队士气低落</strong> - 一线客服变成了”AI 的纠正者”,工作变得枯燥且没有成就感</li>
+</ol>
+<p>项目最终被叫停。原因不是模型不够好,而是选错了起点。</p>
+<p><strong>真正的问题在哪里?</strong></p>
+<p>事后复盘发现,这家企业的客服流程中,真正值得 AI 化的部分并不是”回答问题”,而是”问题分类”和”知识检索”。简单问题的标准化回答本身效率已经很高,而复杂问题的判断依赖上下文和经验,这是 AI 的强项。</p>
+<p>如果项目从”如何用 AI 帮助客服更快地找到正确答案”开始,而不是”如何用 AI 替代客服”,结果可能会完全不同。</p>
+<p>这个案例揭示了一个关键教训:<strong>流程选择的错误,会导致后续所有投入都被浪费</strong>。</p>
+</div>
+</div>
+<div id="高价值流程识别模型不是所有流程都值得-ai-化" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> 高价值流程识别模型:不是所有流程都值得 AI 化<a href="#%E9%AB%98%E4%BB%B7%E5%80%BC%E6%B5%81%E7%A8%8B%E8%AF%86%E5%88%AB%E6%A8%A1%E5%9E%8B%E4%B8%8D%E6%98%AF%E6%89%80%E6%9C%89%E6%B5%81%E7%A8%8B%E9%83%BD%E5%80%BC%E5%BE%97-ai-%E5%8C%96" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="这一模型为何必须存在" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> 这一模型为何必须存在<a href="#%E8%BF%99%E4%B8%80%E6%A8%A1%E5%9E%8B%E4%B8%BA%E4%BD%95%E5%BF%85%E9%A1%BB%E5%AD%98%E5%9C%A8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在传统自动化时代,流程选择的错误成本相对有限。规则引擎、RPA 或脚本化系统,即便效果一般,最多造成效率提升不明显。但在 AI 时代,流程选择一旦错误,往往意味着长周期训练、跨部门协作、数据治理投入的全面浪费。</p>
+<p>高价值流程识别模型的根本目的,是在<strong>投入任何建模、数据或算力之前</strong>,先用一套可复现的判断逻辑,把 70% 注定失败的流程排除掉。</p>
+<p>它的核心假设只有一个:<strong>AI 的价值不来自”能做什么”,而来自”在哪些地方替代或增强人类决策才会改变系统结果”。</strong></p>
+</div>
+<div id="高价值流程的生成逻辑" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> 高价值流程的生成逻辑<a href="#%E9%AB%98%E4%BB%B7%E5%80%BC%E6%B5%81%E7%A8%8B%E7%9A%84%E7%94%9F%E6%88%90%E9%80%BB%E8%BE%91" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>一个流程是否值得 AI 化,取决于它是否同时满足四个维度的乘积条件,而非其中任意一个。</p>
+<p><strong>第一个维度是频率。</strong></p>
+<p>流程发生得越频繁,单位改进带来的系统性收益越大。一个一年只发生两次的流程,即便单次成本高,也不适合作为 AI 转型的起点。</p>
+<p><strong>频率维度的判断标准:</strong></p>
+<ul>
+<li><strong>高频流程</strong>(日频或更高):改进价值会快速累积,适合作为 AI 优先候选</li>
+<li><strong>中频流程</strong>(周频或月频):改进价值需要较长时间体现,可以作为中期目标</li>
+<li><strong>低频流程</strong>(季度频或更低):即便成功改进,对系统整体影响有限,不建议作为 AI 起点</li>
+</ul>
+<p><strong>实践示例:</strong>
+- ✅ 客户咨询处理(日频数千次) → 高频流程,优先候选
+- ✅ 供应商资质审核(月频数十次) → 中频流程,中期考虑
+- ❌ 年度战略规划(年频 1 次) → 低频流程,不建议 AI 化</p>
+<p><strong>第二个维度是成本。</strong></p>
+<p>这里的成本不仅指直接人力费用,还包括时间延迟、机会损失、错误返工、合规风险等隐性成本。AI 的价值往往体现在这些传统核算中被忽略的部分。</p>
+<p><strong>成本维度的细分分析:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>直接人力成本</strong> - 人工执行流程所需的人力投入</li>
+<li><strong>时间延迟成本</strong> - 流程处理时间导致的机会损失</li>
+<li><strong>错误返工成本</strong> - 执行错误导致的返工和补救成本</li>
+<li><strong>合规风险成本</strong> - 流程错误可能带来的合规风险和罚款</li>
+<li><strong>客户流失成本</strong> - 流程效率低导致的客户满意度下降和流失</li>
+</ol>
+<p><strong>第三个维度是风险。</strong></p>
+<p>风险并非越高越适合 AI,而是指流程中错误后果明确、可量化、且存在稳定纠偏机制的风险。如果一个流程的失败后果模糊、不可逆或高度政治化,它并不适合被自动化。</p>
+<p><strong>风险维度的判断框架:</strong></p>
+<ul>
+<li><strong>风险可接受</strong> - 错误后果明确、损失可控、有清晰的纠偏机制</li>
+<li><strong>风险敏感</strong> - 错误后果严重但可衡量、需要设计兜底机制</li>
+<li><strong>风险不可接受</strong> - 错误后果模糊、不可逆、涉及重大责任或声誉</li>
+</ul>
+<p><strong>风险与 AI 介入策略的对应关系:</strong></p>
+<table>
+<thead>
+<tr>
+<th>风险等级</th>
+<th>AI 介入策略</th>
+<th>典型场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>风险可接受</td>
+<td>AI 可作为执行者</td>
+<td>标准数据录入、文档分类</td>
+</tr>
+<tr>
+<td>风险敏感</td>
+<td>AI 应作为建议者</td>
+<td>信贷审批、医疗诊断辅助</td>
+</tr>
+<tr>
+<td>风险不可接受</td>
+<td>AI 不适合直接介入</td>
+<td>重大战略决策、法律裁决</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第四个维度是决策密度。</strong></p>
+<p>决策密度指的是在流程中,每单位时间内需要做出多少判断,而这些判断是否依赖模式识别、历史对比或多变量权衡。没有决策密度的流程,本质只是执行,不需要 AI。</p>
+<p><strong>决策密度的评估方法:</strong></p>
+<p>计算流程中”决策节点”与”执行节点”的比例。决策节点是指需要进行判断、选择、评估的环节;执行节点是指按照既定规则进行的操作。</p>
+<p><strong>决策密度评估示例:</strong></p>
+<p><em>流程 A:标准财务报销</em>
+- 执行节点:提交单据、系统校验、财务审核、打款
+- 决策节点:几乎无(所有步骤都有明确规则)
+- 决策密度:低 → 不适合 AI 化</p>
+<p><em>流程 B:供应商资质评估</em>
+- 执行节点:收集资料、录入系统
+- 决策节点:资质评分、风险判断、合作决策
+- 决策密度:高 → 适合 AI 辅助</p>
+<p>这四个维度不是加总关系,而是乘积关系。任何一个维度接近于零,整体价值就会坍缩。</p>
+<p><strong>价值评估公式:</strong></p>
+<pre><code>AI 流程价值 = 频率 × 成本 × 风险可控性 × 决策密度</code></pre>
+<p>如果任何一个因子为 0 或接近 0,整体价值就会接近 0。</p>
+</div>
+<div id="人力瓶颈与决策瓶颈的区分" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> 人力瓶颈与决策瓶颈的区分<a href="#%E4%BA%BA%E5%8A%9B%E7%93%B6%E9%A2%88%E4%B8%8E%E5%86%B3%E7%AD%96%E7%93%B6%E9%A2%88%E7%9A%84%E5%8C%BA%E5%88%86" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在实践中,很多团队误把人力瓶颈当作 AI 机会。人力瓶颈的典型表现,是人手不够、加班严重、处理不过来。但如果流程本身决策简单、规则明确,那么更合适的解决方案往往是流程再造或传统自动化。</p>
+<p>真正适合 AI 的,是决策瓶颈。决策瓶颈的表现并不是”人不够用”,而是”即便增加人,也无法稳定提高质量或速度”。这类流程通常具有以下特征:判断依赖经验、标准难以完全显性化、个体之间决策差异大、结果质量波动明显。</p>
+<p><strong>人力瓶颈 vs 决策瓶颈的对比分析:</strong></p>
+<table>
+<thead>
+<tr>
+<th>特征</th>
+<th>人力瓶颈</th>
+<th>决策瓶颈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心问题</td>
+<td>人手不够,处理不过来</td>
+<td>判断不稳定,质量波动大</td>
+</tr>
+<tr>
+<td>增加人的效果</td>
+<td>可以线性提升处理量</td>
+<td>无法稳定提升判断质量</td>
+</tr>
+<tr>
+<td>流程特点</td>
+<td>规则明确,执行重复</td>
+<td>依赖经验,判断复杂</td>
+</tr>
+<tr>
+<td>适合的解决方案</td>
+<td>流程优化、传统自动化、RPA</td>
+<td>AI 决策支持、智能辅助</td>
+</tr>
+<tr>
+<td>AI 的价值</td>
+<td>有限(规则引擎即可解决)</td>
+<td>显著(需要模式识别和经验学习)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>真实案例对比:</strong></p>
+<p><em>案例 1:人力瓶颈 - 某电商平台的订单处理流程</em></p>
+<ul>
+<li>问题:订单量激增,人工处理不过来,导致发货延迟</li>
+<li>流程特点:订单信息完整,处理规则明确(检查库存、生成发货单、通知物流)</li>
+<li>解决方案:使用 RPA 自动化订单处理流程</li>
+<li>AI 的价值:低,因为规则明确,不需要复杂判断</li>
+</ul>
+<p><em>案例 2:决策瓶颈 - 某保险公司的理赔审核流程</em></p>
+<ul>
+<li>问题:理赔审核时间长,不同审核员的判断标准不一致,客户投诉多</li>
+<li>流程特点:理赔情况复杂,需要综合考虑多种因素(事故性质、保单条款、历史案例)</li>
+<li>解决方案:使用 AI 辅助审核,提供风险评估和参考建议</li>
+<li>AI 的价值:高,因为需要模式识别和经验判断</li>
+</ul>
+<p>当一个流程的主要痛点来自决策不稳定而非执行不足,它才具备 AI 化的结构前提。</p>
+</div>
+<div id="从-0-到-1-的流程筛选实操路径" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> 从 0 到 1 的流程筛选实操路径<a href="#%E4%BB%8E-0-%E5%88%B0-1-%E7%9A%84%E6%B5%81%E7%A8%8B%E7%AD%9B%E9%80%89%E5%AE%9E%E6%93%8D%E8%B7%AF%E5%BE%84" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在实际操作中,流程筛选应当从流程清单开始,而不是从技术方案开始。以下是具体的操作步骤:</p>
+<p><strong>第一步:建立流程清单</strong></p>
+<p>列出组织中所有跨人、跨系统、跨角色的业务流程,并明确它们的触发条件与输出结果。</p>
+<p><strong>流程清单模板:</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr>
+<th>流程名称</th>
+<th>触发条件</th>
+<th>输出结果</th>
+<th>涉及部门</th>
+<th>涉及系统</th>
+<th>当前痛点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户订单处理</td>
+<td>客户提交订单</td>
+<td>订单确认/发货</td>
+<td>销售、仓储、物流</td>
+<td>CRM、ERP、WMS</td>
+<td>处理周期长,信息不一致</td>
+</tr>
+<tr>
+<td>供应商资质审核</td>
+<td>新供应商申请</td>
+<td>资质评估结果</td>
+<td>采购、法务、财务</td>
+<td>SRM系统</td>
+<td>审核标准不统一,时间长</td>
+</tr>
+<tr>
+<td>员工报销审批</td>
+<td>员工提交报销单</td>
+<td>报销款支付</td>
+<td>员工、部门经理、财务</td>
+<td>OA系统</td>
+<td>审批流程复杂,反馈不及时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第二步:四维度评估</strong></p>
+<p>对每一个流程,分别从频率、成本、风险和决策密度四个维度进行定性打分。这里不追求精确,而追求相对排序。</p>
+<p><strong>评估打分表(1-5分):</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col width="13%" />
+<col width="15%" />
+<col width="15%" />
+<col width="22%" />
+<col width="19%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr>
+<th>流程名称</th>
+<th>频率(1-5)</th>
+<th>成本(1-5)</th>
+<th>风险可控性(1-5)</th>
+<th>决策密度(1-5)</th>
+<th>综合得分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户订单处理</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>160</td>
+</tr>
+<tr>
+<td>供应商资质审核</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>180</td>
+</tr>
+<tr>
+<td>员工报销审批</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<p><strong>打分说明:</strong></p>
+<ul>
+<li><strong>频率</strong>:1(每年1-2次) → 5(每天数十次以上)</li>
+<li><strong>成本</strong>:1(直接成本极低) → 5(综合成本很高)</li>
+<li><strong>风险可控性</strong>:1(风险不可控) → 5(风险完全可控)</li>
+<li><strong>决策密度</strong>:1(几乎无判断) → 5(高度依赖判断)</li>
+</ul>
+<p><strong>第三步:瓶颈类型识别</strong></p>
+<p>识别每个流程的主要瓶颈类型。如果主要问题是执行效率低,则不进入 AI 候选池。如果主要问题是判断质量与一致性,则进入下一轮。</p>
+<p><strong>瓶颈类型判断标准:</strong></p>
+<ul>
+<li><strong>执行瓶颈</strong>:流程规则明确,但执行效率低、耗时长、人力投入大</li>
+<li><strong>决策瓶颈</strong>:流程判断复杂,标准不统一,质量波动大,依赖个人经验</li>
+<li><strong>混合瓶颈</strong>:既有执行问题,也有决策问题,需要综合分析</li>
+</ul>
+<p><strong>第四步:候选流程筛选</strong></p>
+<p>选出一到两个流程作为建模试点,而非一次性全面推进。AI 转型的第一性目标,是建立可复制的方法,而不是一次性规模化。</p>
+<p><strong>筛选原则:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>优先选择高综合得分</strong>的流程</li>
+<li><strong>优先选择决策瓶颈</strong>明显的流程</li>
+<li><strong>优先选择数据基础较好</strong>的流程</li>
+<li><strong>优先选择试点成功后可复制</strong>的流程</li>
+</ol>
+<p><strong>候选流程选择示例:</strong></p>
+<p>基于上表评估,选择”供应商资质审核”作为首个 AI 试点流程,原因:
+- 综合得分最高(180分)
+- 决策密度高(5分),存在明显的决策瓶颈
+- 审核数据相对完整,有利于模型训练
+- 成功后可扩展到其他供应商管理场景</p>
+<p>最终的合格交付物,应当是一份”AI 候选流程说明文档”,其中明确写清楚该流程为什么值得做、如果不做的机会成本是什么、以及成功的判断标准。</p>
+<p><strong>AI 候选流程说明文档模板:</strong></p>
+<pre><code>流程名称:供应商资质审核
+候选理由:
+1. 综合评估得分180分,在所有流程中排名第一
+2. 决策密度高,当前依赖人工经验,判断标准不统一
+3. 每月处理约30个新供应商申请,频率适中
+4. 错误审核可能导致合规风险,风险可控但需改进
+
+不做的机会成本:
+- 每月因审核标准不一致导致约5个供应商重新评估,浪费人力
+- 错误审核可能带来合规风险,预计年度潜在损失约XX万元
+- 审核周期平均7天,影响业务响应速度
+
+成功判断标准:
+- 审核周期从7天缩短至3天
+- 审核一致性提升80%(不同审核员对同一供应商的评分差异)
+- 审核准确率不低于人工审核(错误率&lt;5%)
+- 审核人员工作量减少50%</code></pre>
+</div>
+</div>
+<div id="流程解构方法把复杂工作拆成可自动化单元" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> 流程解构方法:把复杂工作拆成可自动化单元<a href="#%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%84%E6%96%B9%E6%B3%95%E6%8A%8A%E5%A4%8D%E6%9D%82%E5%B7%A5%E4%BD%9C%E6%8B%86%E6%88%90%E5%8F%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8D%95%E5%85%83" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="为什么解构比优化更重要" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> 为什么”解构”比”优化”更重要<a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A7%A3%E6%9E%84%E6%AF%94%E4%BC%98%E5%8C%96%E6%9B%B4%E9%87%8D%E8%A6%81" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>大多数业务流程的问题,并不在于效率低,而在于结构不清。人们习惯用”经验”“感觉”“流程差不多就是这样”来描述工作,这种描述方式本身就阻断了 AI 的可能性。</p>
+<p>流程解构方法的目的,是将一个连续、混杂了信息处理、判断与行动的工作过程,拆解为清晰的功能单元,使每一部分都可以被单独分析其自动化潜力。</p>
+<p>这不是为了画流程图而画流程图,而是为了回答一个关键问题:<strong>哪些部分必须由人完成,哪些部分可以被机器接管,哪些部分可以被重新组合。</strong></p>
+<p><strong>理解”解构”的价值:</strong></p>
+<p>想象一下,如果有人问”如何用 AI 改进采购流程”,这个问题太大了,无法直接回答。但如果我们将采购流程解构为:
+- 需求识别 → 供应商筛选 → 价格谈判 → 合同签署 → 交付跟踪 → 付款结算</p>
+<p>然后进一步解构”供应商筛选”为:
+- 资质收集 → 信息验证 → 风险评估 → 能力评估 → 综合评分</p>
+<p>现在问题就变得具体了:“如何用 AI 改进风险评估?”这个问题的答案就清晰多了。</p>
+</div>
+<div id="流程的基本结构单元" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> 流程的基本结构单元<a href="#%E6%B5%81%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E5%8D%95%E5%85%83" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>任何流程,无论看起来多么复杂,都可以还原为三类基本单元。</p>
+<p><strong>第一类是输入。</strong></p>
+<p>输入包括触发流程的事件、进入流程的数据以及上下文约束。输入的质量决定了后续决策的上限。</p>
+<p><strong>输入的构成要素:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>触发事件</strong> - 启动流程的事件或条件
+<ul>
+<li>例:客户提交订单、员工发起报销、系统检测到异常</li>
+</ul></li>
+<li><strong>数据输入</strong> - 流程处理所需的具体数据
+<ul>
+<li>例:客户信息、订单详情、历史记录</li>
+</ul></li>
+<li><strong>上下文约束</strong> - 限制流程执行的条件或规则
+<ul>
+<li>例:审批权限、预算限制、合规要求</li>
+</ul></li>
+</ol>
+<p><strong>输入质量评估标准:</strong></p>
+<ul>
+<li><strong>完整性</strong> - 数据是否齐全,缺失信息是否可获取</li>
+<li><strong>准确性</strong> - 数据是否正确,来源是否可靠</li>
+<li><strong>结构化程度</strong> - 数据是否结构化,是否易于机器处理</li>
+<li><strong>时效性</strong> - 数据是否及时,是否反映当前状态</li>
+</ul>
+<p><strong>第二类是处理。</strong></p>
+<p>处理并不是一个整体,而是由规则执行、条件判断和主观判断三种机制混合构成。规则是可显性化的,判断是基于模式的,而主观判断往往隐藏在经验之中。</p>
+<p><strong>处理机制的三种类型:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>规则执行</strong> - 按照既定规则进行的操作
+<ul>
+<li>特点:输入明确,规则清晰,输出可预测</li>
+<li>例:数据格式校验、金额计算、状态更新</li>
+</ul></li>
+<li><strong>条件判断</strong> - 基于明确条件的判断
+<ul>
+<li>特点:有明确的判断条件和逻辑,但可能需要组合多个因素</li>
+<li>例:是否符合审批条件、是否超出预算范围</li>
+</ul></li>
+<li><strong>主观判断</strong> - 依赖经验和模式的判断
+<ul>
+<li>特点:判断标准不完全显性,依赖个人经验和模式识别</li>
+<li>例:风险评估、优先级排序、方案选择</li>
+</ul></li>
+</ol>
+<p><strong>处理机制与自动化潜力的关系:</strong></p>
+<table>
+<thead>
+<tr>
+<th>处理机制</th>
+<th>自动化潜力</th>
+<th>适合的技术</th>
+<th>人的角色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>规则执行</td>
+<td>高</td>
+<td>规则引擎、RPA</td>
+<td>监督和异常处理</td>
+</tr>
+<tr>
+<td>条件判断</td>
+<td>中高</td>
+<td>决策树、规则引擎</td>
+<td>复杂情况的人工判断</td>
+</tr>
+<tr>
+<td>主观判断</td>
+<td>中低</td>
+<td>机器学习、AI模型</td>
+<td>最终决策和兜底</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第三类是输出。</strong></p>
+<p>输出既包括对外的行动,也包括对系统的记录。很多流程失败,并不是因为判断错误,而是因为输出不可追踪,导致无法形成反馈。</p>
+<p><strong>输出的类型:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>行动输出</strong> - 对外执行的操作或动作
+<ul>
+<li>例:发送通知、更新记录、触发下游流程</li>
+</ul></li>
+<li><strong>信息输出</strong> - 传递给其他环节的信息
+<ul>
+<li>例:审批结果、评估报告、建议方案</li>
+</ul></li>
+<li><strong>记录输出</strong> - 系统中的数据记录
+<ul>
+<li>例:日志记录、状态更新、历史存档</li>
+</ul></li>
+</ol>
+<p><strong>输出质量的关键要求:</strong></p>
+<ul>
+<li><strong>可追踪性</strong> - 输出能够被追溯到具体的决策和输入</li>
+<li><strong>可验证性</strong> - 输出的正确性能够被验证</li>
+<li><strong>可反馈性</strong> - 输出结果能够被收集,用于改进后续决策</li>
+</ul>
+</div>
+<div id="信息到反馈的运行机制" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> 信息到反馈的运行机制<a href="#%E4%BF%A1%E6%81%AF%E5%88%B0%E5%8F%8D%E9%A6%88%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>一个完整流程并不是线性的,而是一个闭环系统。信息进入系统后,触发决策,决策产生行动,行动产生结果,结果反过来影响下一次信息的解读方式。</p>
+<p>当这个闭环中任何一个环节断裂,流程就会退化为”忙碌但无进化”。AI 的真正价值,恰恰体现在强化这个闭环,使系统能够基于历史结果不断修正决策逻辑。</p>
+<p><strong>决策闭环的五个环节:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>数据采集</strong> - 收集决策所需的信息和数据</li>
+<li><strong>决策生成</strong> - 基于数据生成决策或建议</li>
+<li><strong>行动执行</strong> - 执行决策,产生实际操作</li>
+<li><strong>结果反馈</strong> - 收集执行后的结果和效果</li>
+<li><strong>模型修正</strong> - 基于反馈结果修正决策逻辑</li>
+</ol>
+<p><strong>闭环断裂的常见表现:</strong></p>
+<ul>
+<li><strong>环节1-2断裂</strong>:数据采集不完整,决策缺乏依据</li>
+<li><strong>环节2-3断裂</strong>:决策无法执行,系统与业务脱节</li>
+<li><strong>环节3-4断裂</strong>:结果无法追踪,无法评估决策效果</li>
+<li><strong>环节4-5断裂</strong>:反馈无法用于改进,系统无法进化</li>
+</ul>
+<p>因此,在解构流程时,必须明确每一个判断是否有反馈信号,以及这个反馈是否被系统性记录。如果没有反馈,AI 将无法学习。</p>
+<p><strong>反馈机制的构建要点:</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>定义反馈指标</strong> - 明确用什么指标衡量决策效果</li>
+<li><strong>建立反馈渠道</strong> - 确保结果能够被系统化收集</li>
+<li><strong>设计反馈触发</strong> - 确定何时收集反馈信息</li>
+<li><strong>建立反馈关联</strong> - 确保反馈能够追溯到具体决策</li>
+</ol>
+</div>
+<div id="将流程拆成可自动化单元的方法" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> 将流程拆成”可自动化单元”的方法<a href="#%E5%B0%86%E6%B5%81%E7%A8%8B%E6%8B%86%E6%88%90%E5%8F%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8D%95%E5%85%83%E7%9A%84%E6%96%B9%E6%B3%95" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>实操中,流程解构不应从宏观开始,而应从具体动作开始。以下是详细的操作步骤:</p>
+<p><strong>第一步:案例复盘</strong></p>
+<p>让流程执行者逐步复盘一次真实案例,而不是描述”通常怎么做”。</p>
+<p><strong>复盘方法:</strong></p>
+<ol style="list-style-type: decimal">
+<li>选择一个最近完成的、典型的案例</li>
+<li>沿着时间线回溯,记录每一步操作</li>
+<li>特别关注”实际发生了什么”,而不是”应该发生什么”</li>
+<li>记录每个环节的输入、处理和输出</li>
+</ol>
+<p><strong>复盘记录模板:</strong></p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="13%" />
+<col width="15%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr>
+<th>时间</th>
+<th>操作</th>
+<th>执行者</th>
+<th>输入信息</th>
+<th>处理方式</th>
+<th>输出结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00</td>
+<td>收到供应商申请</td>
+<td>采购专员</td>
+<td>供应商资料包</td>
+<td>初步检查</td>
+<td>资料完整性评估</td>
+</tr>
+<tr>
+<td>09:30</td>
+<td>验证营业执照</td>
+<td>法务专员</td>
+<td>营业执照图片</td>
+<td>与工商系统核对</td>
+<td>验证结果</td>
+</tr>
+<tr>
+<td>10:15</td>
+<td>评估财务状况</td>
+<td>财务分析师</td>
+<td>财务报表</td>
+<td>分析指标</td>
+<td>财务评分</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第二步:决策点标注</strong></p>
+<p>在复盘过程中,标注每一个决策点,并追问该判断依赖的是什么信息,是规则、历史经验还是即时感知。</p>
+<p><strong>决策点标注方法:</strong></p>
+<p>对于每个操作,问三个问题:
+1. 这个操作需要做判断吗?
+2. 如果需要,判断的依据是什么?
+3. 这个判断是规则还是经验?</p>
+<p><strong>决策点分类:</strong></p>
+<ul>
+<li><strong>规则决策</strong> - 依据明确规则,可完全显性化</li>
+<li><strong>模式决策</strong> - 依据历史模式,需要经验判断</li>
+<li><strong>价值决策</strong> - 依据价值取向,涉及主观权衡</li>
+</ul>
+<p><strong>第三步:决策单元拆分</strong></p>
+<p>将这些判断点拆分为最小决策单元,每一个单元只回答一个问题,例如”是否进入下一步”“选择哪一个方案”。</p>
+<p><strong>最小决策单元的定义:</strong></p>
+<p>一个决策单元必须满足:
+- 只回答一个明确的决策问题
+- 有清晰的输入和输出
+- 可以独立进行评估和优化</p>
+<p><strong>决策单元拆分示例:</strong></p>
+<p><em>原始判断:“评估这个供应商是否合格”</em></p>
+<p>拆分为:
+- 单元1:供应商是否具备基本资质?
+- 单元2:供应商财务状况是否健康?
+- 单元3:供应商过往业绩是否达标?
+- 单元4:综合评分是否达到合格标准?</p>
+<p><strong>第四步:自动化潜力评估</strong></p>
+<p>评估每一个决策单元是否满足三项条件:输入是否结构化、输出是否可验证、错误是否可纠正。只有同时满足这三点的单元,才是真正可自动化的候选。</p>
+<p><strong>自动化潜力评估表:</strong></p>
+<table>
+<thead>
+<tr>
+<th>决策单元</th>
+<th>输入结构化</th>
+<th>输出可验证</th>
+<th>错误可纠正</th>
+<th>自动化潜力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>资质基本判断</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>高</td>
+</tr>
+<tr>
+<td>财务状况评估</td>
+<td>✅</td>
+<td>⚠️</td>
+<td>✅</td>
+<td>中</td>
+</tr>
+<tr>
+<td>业绩达标评估</td>
+<td>⚠️</td>
+<td>⚠️</td>
+<td>✅</td>
+<td>低</td>
+</tr>
+<tr>
+<td>综合评分</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>中高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>评估说明:</strong></p>
+<ul>
+<li>✅ = 完全满足</li>
+<li>⚠️ = 部分满足</li>
+<li>❌ = 不满足</li>
+</ul>
+<p>最终的交付物,应当是一份”流程决策拆解图”,其中清晰标明哪些单元保留给人,哪些单元可以由 AI 接管,哪些单元需要重新设计流程结构。</p>
+<p><strong>流程决策拆解图示例:</strong></p>
+<pre><code>供应商资质审核流程决策拆解
+
+输入:供应商申请资料
+
+┌─────────────────────────────────────┐
+│ 单元1:资质基本判断 (AI)             │
+│ 输入:营业执照、税务登记证等         │
+│ 处理:与官方系统核验                 │
+│ 输出:资质是否完备                   │
+│ 人工介入:异常情况处理               │
+└─────────────────────────────────────┘
+              ↓
+┌─────────────────────────────────────┐
+│ 单元2:财务状况评估 (AI辅助)         │
+│ 输入:财务报表、行业对比数据         │
+│ 处理:财务指标分析、风险评估         │
+│ 输出:财务评分和风险提示             │
+│ 人工介入:最终判断                   │
+└─────────────────────────────────────┘
+              ↓
+┌─────────────────────────────────────┐
+│ 单元3:综合评估 (人工)               │
+│ 输入:资质、财务、业绩等多维信息     │
+│ 处理:综合评估、风险权衡             │
+│ 输出:是否通过审核                   │
+│ 人工介入:最终决策                   │
+└─────────────────────────────────────┘
+              ↓
+输出:审核结果及说明</code></pre>
+</div>
+<div id="常见误区与纠偏方式" class="section level3 hasAnchor" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> 常见误区与纠偏方式<a href="#%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E4%B8%8E%E7%BA%A0%E5%81%8F%E6%96%B9%E5%BC%8F" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>误区一:在未完成解构前就急于引入模型</strong></p>
+<p>新手最常见的错误,是在尚未完成解构之前就急于引入模型。这会导致模型承担了原本属于流程设计的问题。</p>
+<p><strong>表现:</strong>
+- 项目一开始就讨论”用什么模型”“训练什么数据”
+- 流程结构不清楚,就开始技术选型和开发</p>
+<p><strong>后果:</strong>
+- 模型性能不佳时,无法区分是模型问题还是流程设计问题
+- 项目失败后,无法从失败中学习,因为根本不知道问题在哪里</p>
+<p><strong>纠偏方式:</strong>
+- 强制执行完整的流程解构流程
+- 在模型引入前,必须完成流程决策拆解图
+- 明确每个决策单元的自动化潜力评估</p>
+<p><strong>误区二:把”判断复杂”误认为”不可自动化”</strong></p>
+<p>另一个常见问题,是把”判断复杂”误认为”不可自动化”。事实上,复杂往往意味着模式丰富,只要反馈存在,就具备被学习的可能。</p>
+<p><strong>表现:</strong>
+- 看到”依赖经验”“需要专业判断”就认为无法自动化
+- 过度依赖人工,错失 AI 介入机会</p>
+<p><strong>纠偏方式:</strong>
+- 区分”规则复杂”和”模式复杂”
+- 规则复杂可以通过决策树解决
+- 模式复杂正是 AI 的优势领域</p>
+<p><strong>案例:</strong></p>
+<p><em>错误认知:</em> “风险评估需要多年经验,AI 无法做到”</p>
+<p><em>正确理解:</em> “风险评估的模式可以被学习,AI 可以基于历史数据学习评估模式,人类负责兜底和特殊情况处理”</p>
+<p><strong>纠偏的关键检查点只有一个:如果你无法用一句话说清楚某个决策单元的输入和输出,那么它还没有被真正解构。</strong></p>
+<p><strong>解构完整性检查清单:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox" />每个决策单元是否都有明确的输入?</label></li>
+<li><label><input type="checkbox" />每个决策单元是否都有明确的输出?</label></li>
+<li><label><input type="checkbox" />每个决策单元是否都能用一句话描述?</label></li>
+<li><label><input type="checkbox" />每个决策单元的自动化潜力是否已评估?</label></li>
+<li><label><input type="checkbox" />人机边界是否已明确?</label></li>
+</ul>
+</div>
+</div>
+<div id="本阶段的能力边界与成熟度判断" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> 本阶段的能力边界与成熟度判断<a href="#%E6%9C%AC%E9%98%B6%E6%AE%B5%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E5%88%A4%E6%96%AD" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>流程选择与建模能力,并不是 AI 项目的附属技能,而是其基础设施。它处在方法论与最佳实践之间,尚未完全标准化,但已经高度可复制。</p>
+<p>当一个团队能够稳定地识别高价值流程,并将其拆解为清晰的决策单元时,AI 才不再是一次性项目,而会成为持续进化的系统能力。</p>
+<div id="能力成熟度评估框架" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> 能力成熟度评估框架<a href="#%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E8%AF%84%E4%BC%B0%E6%A1%86%E6%9E%B6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Level 0:无意识阶段</strong>
+- 团队不了解流程选择的重要性
+- AI 项目随意选择流程,缺乏系统性判断
+- 项目失败率高,但不知道为什么</p>
+<p><strong>Level 1:有意识阶段</strong>
+- 团队认识到流程选择的重要性
+- 有基本的流程清单和评估意识
+- 但评估方法不系统,结果不稳定</p>
+<p><strong>Level 2:有方法阶段</strong>
+- 团队建立了流程选择的评估框架
+- 有明确的四维度评估方法和流程解构方法
+- 能够相对稳定地识别高价值流程</p>
+<p><strong>Level 3:有系统能力阶段</strong>
+- 流程选择与建模已成为团队标准能力
+- 有完整的工具、模板和培训体系
+- 能够持续产出高质量的 AI 候选流程</p>
+<p><strong>Level 4:组织级能力阶段</strong>
+- 流程选择能力已在组织内复制和扩散
+- 有跨部门的协作机制和知识共享
+- AI 项目成功率高,失败经验能够系统学习</p>
+</div>
+<div id="从-level-0-到-level-2-的进阶路径" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> 从 Level 0 到 Level 2 的进阶路径<a href="#%E4%BB%8E-level-0-%E5%88%B0-level-2-%E7%9A%84%E8%BF%9B%E9%98%B6%E8%B7%AF%E5%BE%84" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Step 1:建立意识(0 → 1)</strong>
+- 通过案例分享,让团队理解流程选择的重要性
+- 介绍四维度评估框架的基本概念
+- 开始建立基础的流程清单</p>
+<p><strong>Step 2:建立方法(1 → 2)</strong>
+- 设计流程选择的评估模板
+- 制定流程解构的操作步骤
+- 在试点项目中应用和完善方法</p>
+<p><strong>Step 3:建立系统能力(2 → 3)</strong>
+- 将方法固化为标准工具和模板
+- 建立流程选择的审核机制
+- 开展团队培训和知识传递</p>
+</div>
+<div id="本阶段的交付标准" class="section level3 hasAnchor" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> 本阶段的交付标准<a href="#%E6%9C%AC%E9%98%B6%E6%AE%B5%E7%9A%84%E4%BA%A4%E4%BB%98%E6%A0%87%E5%87%86" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>一个合格的 Stage 1 项目,应当至少交付:</p>
+<ol style="list-style-type: decimal">
+<li><strong>流程清单</strong> - 包含组织内所有跨部门流程的基本信息</li>
+<li><strong>候选流程评估报告</strong> - 对候选流程的四维度评估和分析</li>
+<li><strong>流程决策拆解图</strong> - 对候选流程的详细解构和自动化潜力评估</li>
+<li><strong>人机边界设计</strong> - 明确哪些环节由 AI 处理,哪些由人处理</li>
+</ol>
+<p>如果你愿意,下一步我们可以在此基础上继续展开 Stage 2,进入”Automation and AI Intervention in Design”的建模阶段,把这些决策单元真正转化为可运行的智能系统。</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="自动化与-ai-介入设计.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["AI-Driven-Business-Process-Transformation-and-Automation.pdf", "AI-Driven-Business-Process-Transformation-and-Automation.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "none",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
